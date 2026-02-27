@@ -44,13 +44,13 @@ const catalogDisplay = () => {
     const result = products.map((products) => {
         let status;
 
-        if (products.inStock === "true"){
+        if (products.inStock === true ){
             status = console.log("Còn hàng");
         } else {
             status = console.log("Hết hàng");
         }
 
-        return `${products.name} - Giá: ${products.price} - Trạng thái: ${status}\n`
+        return `${products.name} - Giá: ${products.price} - Trạng thái: ${status}`
     });
 
     console.log(result);
