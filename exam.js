@@ -45,9 +45,9 @@ const catalogDisplay = () => {
         let status;
 
         if (products.inStock === true ){
-            status = console.log("Còn hàng");
+            status = "còn hàng"
         } else {
-            status = console.log("Hết hàng");
+            status = "hết hàng"
         }
 
         return `${products.name} - Giá: ${products.price} - Trạng thái: ${status}`
